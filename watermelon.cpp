@@ -1,19 +1,14 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
-int main(int argc, char *argv[]){
-	string line;
-	
-	while(true){
-		getline(cin, line);
-		cout << line << endl;
-		if (line.empty())
-		{
-			break;
-		}
+ 
+int main(){
+	int weight;
+	cin >> weight;
+	if (weight > 2 && weight % 2 == 0)
+	{
+		cout << "YES" << endl;
+		return 0;
 	}
-
+	cout << "NO" << endl;
 	return 0;
 }
